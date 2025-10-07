@@ -6,7 +6,7 @@ export function HeroContact() {
                     Get in Touch with Yova Technologies
                 </h1>
                 <p className="text-lg text-[#0A3D62] max-w-3xl mx-auto leading-relaxed text-pretty">
-                    We're here to help you navigate your most complex business challenges. Send us a message or reach out through our direct contact channels.
+                    We&apos;re here to help you navigate your most complex business challenges. Send us a message or reach out through our direct contact channels.
                 </p>
             </div>
         </section>

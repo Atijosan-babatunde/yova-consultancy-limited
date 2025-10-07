@@ -1,4 +1,4 @@
-import { Button } from "@/components/Ui/button";
+import Image from "next/image";
 
 
 export function StorySection() {
@@ -34,7 +34,7 @@ export function StorySection() {
           {/* Team Image */}
           <div className="relative">
             <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
-              <img
+              <Image
                  src="/images/about/aboutgroup.png"
                 alt="Yova Technologies team collaborating in modern office"
                 className="w-full h-full object-cover"

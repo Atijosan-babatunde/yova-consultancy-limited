@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "../Ui/button";
+import Image from "next/image";
 
 export default function AboutSection() {
   return (
@@ -36,7 +37,7 @@ export default function AboutSection() {
 
           {/* Right Image */}
           <div>
-            <img
+            <Image
               src="/images/about/aboutimg.jpg"
               alt="Yova Technologies consultants discussing"
               className="rounded-lg shadow-lg object-cover w-full h-72 sm:h-96"

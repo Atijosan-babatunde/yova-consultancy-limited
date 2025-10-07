@@ -19,7 +19,7 @@ export function GdprSection() {
         <AccordionItem title="Can I request access to my data?">
           Yes, you have the right to access, modify, or delete your personal
           data at any time. Simply contact us at privacy@yovatech.com with your
-          request, and we'll process it within 30 days as required by GDPR
+          request, and we&apos;ll process it within 30 days as required by GDPR
           regulations.
         </AccordionItem>
 

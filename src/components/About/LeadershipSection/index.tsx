@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 const leaders = [
   {
     name: "Alexander Wilson",
@@ -35,7 +37,7 @@ export function LeadershipSection() {
             <div key={index} className="text-center">
               <div className="relative mb-6">
                 <div className="w-48 h-48 mx-auto rounded-full overflow-hidden bg-gray-100">
-                  <img
+                  <Image
                     src={leader.image || "/placeholder.svg"}
                     alt={`${leader.name} - ${leader.position}`}
                     className="w-full h-full object-cover"
