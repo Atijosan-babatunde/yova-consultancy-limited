@@ -36,7 +36,10 @@ export function TestimonialsSection() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
             <div key={index} className="bg-gray-50 p-6 rounded-lg">
-              <blockquote className="text-gray-700 mb-6 italic leading-relaxed">"{testimonial.quote}"</blockquote>
+              {/* <blockquote className="text-gray-700 mb-6 italic leading-relaxed">"{testimonial.quote}"</blockquote> */}
+              <blockquote className="text-gray-700 mb-6 italic leading-relaxed">
+                &quot;{testimonial.quote}&quot;
+              </blockquote>
 
               <div className="flex items-center">
                 <div className="relative h-12 w-12 rounded-full overflow-hidden mr-4">
