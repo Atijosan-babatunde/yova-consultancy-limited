@@ -13,7 +13,7 @@ export function ContactInfo() {
           </div>
           <div>
             <a href="tel:+16551234567" className="text-slate-900 hover:text-slate-700 font-medium">
-              +1 (655) 123-4567
+             07828128718
             </a>
           </div>
         </div>
@@ -25,7 +25,7 @@ export function ContactInfo() {
           </div>
           <div>
             <a href="mailto:contact@yovatech.com" className="text-slate-900 hover:text-slate-700 font-medium">
-              contact@yovatech.com
+              info@yovalimited.com
             </a>
           </div>
         </div>

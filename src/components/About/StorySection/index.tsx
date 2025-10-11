@@ -33,11 +33,13 @@ export function StorySection() {
 
           {/* Team Image */}
           <div className="relative">
-            <div className="aspect-[4/3] bg-gray-100 rounded-lg overflow-hidden">
+            <div className="aspect-[4/3] rounded-lg overflow-hidden">
               <Image
-                 src="/images/about/aboutgroup.png"
+                src="/images/about/aboutgroup.png"
                 alt="Yova Technologies team collaborating in modern office"
-                className="w-full h-full object-cover"
+                width={1200}
+                height={800}
+                className="w-full h-auto object-cover rounded-lg"
               />
             </div>
           </div>

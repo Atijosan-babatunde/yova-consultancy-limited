@@ -116,7 +116,7 @@ export default function CoreServices() {
             ),
         },
         {
-            title: "Additional Consulting Services",
+            title: "CV Review Services",
             subtitle: "Tailored solutions for unique challenges",
             description:
                 "Flexible consulting to address your specific business needs.",
@@ -145,7 +145,7 @@ export default function CoreServices() {
                         Our Core Services
                     </h2>
                     <p className="text-[#0A3D62] text-lg">
-                        Comprehensive consultancy offerings designed to accelerate your business success.
+                        Trusted consultancy services helping organizations across the UK define, optimize, and deliver lasting solutions.
                     </p>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-5xl mx-auto">

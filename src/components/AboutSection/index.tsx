@@ -21,14 +21,19 @@ export default function AboutSection() {
           {/* Left Text Block */}
           <div>
             <h3 className="text-xl font-semibold text-[#0A3D62] mb-4">
-              Our Mission: Delivering Unparalleled Value
+              Our Mission: Driving Business Success Through Expert Business Analysis
             </h3>
             <p className="text-[#0A3D62] leading-relaxed mb-6">
-              At Yova Tech, we are committed to helping organizations navigate
-              complex technological landscapes and achieve their strategic objectives. <br />
-              Our team of seasoned consultants brings deep industry expertise and a client-centric
-              approach to every project, ensuring bespoke solutions that drive tangible results.
-              We believe in building lasting partnerships founded on trust, transparency, and a shared vision for success.
+              At Yova Technologies Ltd, we believe business success starts with clarity. With over a decade of experience each, our founders bring extensive expertise in financial services, consultancy, telecoms, and sales.
+              We are passionate about helping organizations transform by identifying business needs, defining clear requirements, and delivering solutions that drive measurable impact.<br />
+              Our approach is: <br />
+              ● Collaborative: We work alongside your teams to ensure stakeholder alignment.<br />
+
+              ● Practical: We provide actionable insights, not just reports.<br />
+
+              ● Adaptable: We tailor our services to your industry, challenges, and goals.<br />
+
+              Yova Technologies Ltd is a registered UK company, committed to high standards of professionalism, compliance, and continuous improvement.
             </p>
             <Button asChild variant="blue">
               <Link href="/about">Learn More About Us</Link>
@@ -40,6 +45,8 @@ export default function AboutSection() {
             <Image
               src="/images/about/aboutimg.jpg"
               alt="Yova Technologies consultants discussing"
+              width={800} // 👈 any reasonable width
+              height={600} // 👈 any reasonable height
               className="rounded-lg shadow-lg object-cover w-full h-72 sm:h-96"
               loading="lazy"
             />
