@@ -7,29 +7,55 @@ export function StorySection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
-          <div>
-            <h2 className="text-3xl font-bold text-[#0A3D62]  mb-6">Our Story - A Legacy of Innovation</h2>
-            <div className="space-y-4 text-[#0A3D62]  leading-relaxed">
-              <p>
-                Founded with a vision to revolutionize the technology landscape, Yova Technologies Ltd has been at the
-                forefront of digital transformation for over a decade. Our journey began with a simple yet powerful
-                belief: technology should empower businesses to achieve their full potential.
+          <div className="max-w-4xl mx-auto px-4 py-12 text-[#0A3D62]">
+            {/* Section Header */}
+            <h2 className="text-3xl font-bold text-center mb-8">
+              Our Story – <span className="text-[#0A3D62]">A Legacy of Innovation</span>
+            </h2>
+
+            {/* Content */}
+            <div className="space-y-2 leading-relaxed text-lg">
+              <p className="text-[16px]">
+                At <span className="font-semibold">Yova Technologies Ltd</span>, we believe that business success begins with
+                clarity. With over a decade of experience each, our founders bring deep expertise in
+                <span className="font-medium"> financial services, consultancy, telecoms, and sales</span>.
+                <br />
+                <br />
+                We are passionate about helping organizations transform by identifying business needs,
+                defining clear requirements, and delivering solutions that drive measurable impact.
               </p>
-              <p>
-                From our humble beginnings as a small startup to becoming a trusted partner for enterprises worldwide,
-                we have consistently delivered cutting-edge solutions that drive growth and innovation. Our commitment
-                to excellence has earned us recognition as industry leaders in software development, cloud solutions,
-                and digital consulting.
-              </p>
-              <p>
-                Today, we continue to push boundaries, embracing emerging technologies like AI, machine learning, and
-                blockchain to create solutions that not only meet current needs but anticipate future challenges. Our
-                story is one of continuous evolution, driven by our passion for technology and our dedication to client
-                success.
+
+              {/* Subsection */}
+              <div>
+                <h3 className="text-[20px] font-semibold mb-4">Our Approach</h3>
+                <ul className="space-y-1 list-disc list-inside">
+                  <li className="text-[14px]">
+                    <span className="font-medium text-[14px]">Collaborative:</span> We work alongside your teams to ensure
+                    stakeholder alignment.
+                  </li>
+                  <li className="text-[14px]">
+                    <span className="font-medium text-[14px]">Practical:</span> We provide actionable insights, not just reports.
+                  </li>
+                  <li className="text-[14px]">
+                    <span className="font-medium text-[14px]">Adaptable:</span> We tailor our services to your industry, challenges,
+                    and goals.
+                  </li>
+                </ul>
+              </div>
+
+              {/* Closing */}
+              <p className="text-[16px] mt-2">
+                <span className="font semibold">Yova Technologies Ltd</span> is a registered UK company, committed to high
+                standards of professionalism, compliance, and continuous improvement.
               </p>
             </div>
-            {/* <Button className="mt-6 px-6 py-2">Learn More</Button> */}
+
+            {/* Optional Call-to-Action */}
+            {/* <Button className="mt-8 bg-[#0A3D62] text-white px-6 py-3 rounded-2xl hover:bg-[#145DA0] transition">
+    Learn More
+  </Button> */}
           </div>
+
 
           {/* Team Image */}
           <div className="relative">

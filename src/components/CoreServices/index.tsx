@@ -1,3 +1,5 @@
+import { ChartBarSquareIcon, ClipboardDocumentListIcon, ComputerDesktopIcon, DocumentCheckIcon, IdentificationIcon, UsersIcon } from "@heroicons/react/24/outline";
+
 export default function CoreServices() {
     const services = [
         {
@@ -6,21 +8,7 @@ export default function CoreServices() {
             description:
                 "Drive successful project outcomes by understanding what matters most.",
             icon: (
-                <svg
-                    className="h-8 w-8 flex-shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M9 12h6m-6 4h6m2 4H7a2 2 0 01-2-2V6a2 2 0 012-2h3.5l2 2H17a2 2 0 012 2v10a2 2 0 01-2 2z"
-                    />
-                </svg>
+                <ClipboardDocumentListIcon className="h-8 w-8 text-[#F1170C] flex-shrink-0" />
             ),
         },
         {
@@ -29,21 +17,7 @@ export default function CoreServices() {
             description:
                 "Increase efficiency and reduce costs with clear process flows.",
             icon: (
-                <svg
-                    className="h-8 w-8 flex-shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M3 10h10M3 14h7m-1 9h4.5A1.5 1.5 0 0014 21.5v-3m4-14h.01M19 21h-2a1 1 0 110-2h2a1 1 0 110 2z"
-                    />
-                </svg>
+                <ChartBarSquareIcon className="h-8 w-8 text-[#F1170C] flex-shrink-0" />
             ),
         },
         {
@@ -52,21 +26,7 @@ export default function CoreServices() {
             description:
                 "Align technology changes with your strategic business goals.",
             icon: (
-                <svg
-                    className="h-8 w-8 flex-shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M11 11V7a4 4 0 014-4h4v4a4 4 0 01-4 4h-4zm0 0v4a4 4 0 004 4h4v-4a4 4 0 00-4-4h-4zm-6 8a4 4 0 004-4v-4H5v4a4 4 0 004 4z"
-                    />
-                </svg>
+                <ComputerDesktopIcon className="h-8 w-8 text-[#F1170C] flex-shrink-0" />
             ),
         },
         {
@@ -75,21 +35,7 @@ export default function CoreServices() {
             description:
                 "Manage change effectively with clear stakeholder communications.",
             icon: (
-                <svg
-                    className="h-8 w-8  flex-shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M7 8h10M7 12h8m-8 4h6"
-                    />
-                </svg>
+                <UsersIcon className="h-8 w-8 text-[#F1170C] flex-shrink-0" />
             ),
         },
         {
@@ -98,41 +44,16 @@ export default function CoreServices() {
             description:
                 "Expert preparation to secure government and private sector tenders.",
             icon: (
-                <svg
-                    className="h-8 w-8 flex-shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M12 8c-5 0-9 4-9 9h18c0-5-4-9-9-9zM12 8V6m-4 4h8"
-                    />
-                </svg>
+                 <DocumentCheckIcon className="h-8 w-8 text-[#F1170C] flex-shrink-0" />
             ),
         },
         {
             title: "CV Review Services",
-            subtitle: "Tailored solutions for unique challenges",
+            subtitle: "Our CV Review and Interview Coaching service is designed to help clients craft powerful, confident, and career-ready profiles that stand out to employers",
             description:
-                "Flexible consulting to address your specific business needs.",
+                "Helping professionals present their best selves on paper — and in person.",
             icon: (
-                <svg
-                    className="h-8 w-8 flex-shrink-0"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth={2}
-                    viewBox="0 0 24 24"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="2" />
-                    <path d="M8 12l2 2 4-4" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
+                <IdentificationIcon className="h-8 w-8 text-[#F1170C] flex-shrink-0" />
             ),
         },
     ];

@@ -9,7 +9,7 @@ const navLinks = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About Us" },
   { href: "/services", label: "Services" },
-  { href: "/industries", label: "Industries" },
+  // { href: "/industries", label: "Industries" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -20,18 +20,15 @@ export default function Navbar() {
     <nav className="bg-white shadow-md fixed w-full z-50 border-b border-gray-200">
       <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
         {/* Left: Logo */}
-        <Link
-          href="/"
-        // className={`header-logo block w-full ${sticky ? "py-5 lg:py-2" : "py-8"
-        //   } `}
-        >
+        <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="/images/logo/yova1.png"
+            src="/images/logo/logonew.png"
             alt="logo"
-            width={120}
+            width={60}
             height={20}
-            className="w-full"
+            className="w-[31px]"
           />
+          <span className="text-[#0A3D62] font-bold text-xl">YOVA TECH</span>
         </Link>
 
 

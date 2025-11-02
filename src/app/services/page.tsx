@@ -1,9 +1,9 @@
+import CoreServices from '@/components/CoreServices'
 import Navbar from '../../components/Navbar'
 import { CTASection } from '@/components/CtaSection'
 import { Footer } from '@/components/Footer'
 import { CoreOfferings } from '@/components/Services/CoreOfferings'
 import { HeroSection } from '@/components/Services/HeroSection'
-import { SpecializedExpertise } from '@/components/Services/SpecializedExpertise'
 
 export default function ServicesPage() {
     return (
@@ -11,7 +11,7 @@ export default function ServicesPage() {
             <Navbar />
             <main className="pt-14 w-full">
               <HeroSection />
-              <SpecializedExpertise/>
+              <CoreServices/>
               <CoreOfferings/>
             </main>
             <CTASection />

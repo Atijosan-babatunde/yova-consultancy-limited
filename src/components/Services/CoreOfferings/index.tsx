@@ -41,6 +41,14 @@ const offerings = [
     imageAlt: "Tender support meeting",
     reverse: false,
   },
+   {
+    title: "CV Review Service",
+    description:
+      "Our CV review and interview coaching service is designed to help clients craft powerful, confident, and career-ready profiles that stand out to employers. We go beyond surface-level edits to ensure you understand, own, and articulate your professional story with clarity and confidence.",
+    image: "/images/services/cv-review.jpg",
+    imageAlt: "cv review",
+    reverse: true,
+  },
 ]
 
 export function CoreOfferings() {

@@ -3,24 +3,24 @@ import { Award, Shield, CheckCircle, Star } from "lucide-react"
 const certifications = [
   {
     icon: Award,
-    name: "ISO 27001",
-    description: "Information Security Management",
+    name: "BCS Foundation",
+    description: "Certificate in Business Analysis",
   },
   {
     icon: Shield,
-    name: "SOC 2 Type II",
-    description: "Security & Compliance",
+    name: "BCS  Practitioner",
+    description: "Certificate in Requirements Engineering",
   },
   {
     icon: CheckCircle,
-    name: "AWS Partner",
-    description: "Advanced Consulting Partner",
+    name: "Scaled agile",
+    description: "POPM certification",
   },
-  {
-    icon: Star,
-    name: "Microsoft Gold",
-    description: "Application Development",
-  },
+  // {
+  //   icon: Star,
+  //   name: "Microsoft Gold",
+  //   description: "Application Development",
+  // },
 ]
 
 export function CertificationsSection() {
@@ -34,7 +34,7 @@ export function CertificationsSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certifications.map((cert, index) => {
             const IconComponent = cert.icon
             return (

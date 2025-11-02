@@ -24,16 +24,16 @@ export default function AboutSection() {
               Our Mission: Driving Business Success Through Expert Business Analysis
             </h3>
             <p className="text-[#0A3D62] leading-relaxed mb-6">
-              At Yova Technologies Ltd, we believe business success starts with clarity. With over a decade of experience each, our founders bring extensive expertise in financial services, consultancy, telecoms, and sales.
+              At Yova Technologies Ltd, we believe business success starts with clarity. With over a decade of experience each, our founders bring extensive expertise in financial services, consultancy, telecoms, and sales.<br />
               We are passionate about helping organizations transform by identifying business needs, defining clear requirements, and delivering solutions that drive measurable impact.<br />
-              Our approach is: <br />
+              {/* Our approach is: <br />
               ● Collaborative: We work alongside your teams to ensure stakeholder alignment.<br />
 
               ● Practical: We provide actionable insights, not just reports.<br />
 
               ● Adaptable: We tailor our services to your industry, challenges, and goals.<br />
 
-              Yova Technologies Ltd is a registered UK company, committed to high standards of professionalism, compliance, and continuous improvement.
+              Yova Technologies Ltd is a registered UK company, committed to high standards of professionalism, compliance, and continuous improvement. */}
             </p>
             <Button asChild variant="blue">
               <Link href="/about">Learn More About Us</Link>
