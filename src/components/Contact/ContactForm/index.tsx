@@ -156,7 +156,7 @@ export function ContactForm() {
     <div className="bg-white rounded-lg border border-slate-200 p-8">
       <h2 className="text-2xl font-bold text-slate-900 mb-2">Send Us a Message</h2>
       <p className="text-slate-600 text-sm mb-6">
-        Fill out the form below and we'll get back to you as soon as possible.
+        Fill out the form below and we`&apos;ll get back to you as soon as possible.
       </p>
 
       <form onSubmit={handleSubmit} className="space-y-6">
