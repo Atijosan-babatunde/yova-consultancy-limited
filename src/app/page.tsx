@@ -6,7 +6,7 @@ import { Footer } from "@/components/Footer";
 import HeroBanner from "@/components/Hero";
 // import { IndustriesSection } from "@/components/IndustriesSection";  
 import Navbar from "@/components/Navbar";
-import { TestimonialsSection } from "@/components/TestimonialsSections";
+// import { TestimonialsSection } from "@/components/TestimonialsSections";
 
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
         <AboutSection/>
         <CoreServices/>
         {/* <IndustriesSection/> */}
-        <TestimonialsSection/>
+        {/* <TestimonialsSection/> */}
         <CTASection/>
         <Footer/>
       </main>
