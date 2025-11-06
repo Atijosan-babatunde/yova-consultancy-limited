@@ -11,7 +11,7 @@ const slides = [
   {
     image: "/images/hero/herothree.jpg",
     title: "Industry-Focused Solutions",
-    subtitle: "Finance, sales, telecoms and technology consultancy.",
+    subtitle: "Finance, Sales, Telecoms and Technology Consultancy.",
   },
   {
     image: "/images/hero/slide3.jpg",
