@@ -49,9 +49,9 @@ export default function CoreServices() {
         },
         {
             title: "CV Review Services",
-            subtitle: "Our CV Review and Interview Coaching service is designed to help clients craft powerful, confident, and career-ready profiles that stand out to employers",
+            subtitle: "Helping professionals",
             description:
-                "Helping professionals present their best selves on paper — and in person.",
+                "present their best selves on paper — and in person.",
             icon: (
                 <IdentificationIcon className="h-8 w-8 text-[#F1170C] flex-shrink-0" />
             ),
@@ -80,7 +80,7 @@ export default function CoreServices() {
                             </div>
                             <div className='items-start'>
                                 <h3 className="text-lg font-semibold text-gray-900">{title}</h3>
-                                <p className="text-gray-700 font-medium">{subtitle}</p>
+                                <p className="text-gray-700 font-grow">{subtitle}</p>
                             </div>
                             <p className="text-gray-700 flex-grow">{description}</p>
                             {/* <div className="mt-6">

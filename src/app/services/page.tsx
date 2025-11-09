@@ -1,7 +1,7 @@
 import CoreServices from '@/components/CoreServices'
 import Navbar from '../../components/Navbar'
 import { CTASection } from '@/components/CtaSection'
-import { Footer } from '@/components/Footer'
+// import { Footer } from '@/components/Footer'
 import { CoreOfferings } from '@/components/Services/CoreOfferings'
 import { HeroSection } from '@/components/Services/HeroSection'
 
@@ -15,7 +15,7 @@ export default function ServicesPage() {
               <CoreOfferings/>
             </main>
             <CTASection />
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

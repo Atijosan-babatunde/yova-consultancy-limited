@@ -1,8 +1,8 @@
 import { ContactForm } from "@/components/Contact/ContactForm";
 import { ContactInfo } from "@/components/Contact/ContactInfo";
-import { GdprSection } from "@/components/Contact/GdprSection";
+// import { GdprSection } from "@/components/Contact/GdprSection";
 import { HeroContact } from "@/components/Contact/HeroContact";
-import { Footer } from "@/components/Footer";
+// import { Footer } from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 
 
@@ -22,13 +22,13 @@ export default function ContactPage() {
                             {/* Right Column - Contact Info & GDPR */}
                             <div className="space-y-8">
                                 <ContactInfo />
-                                <GdprSection />
+                                {/* <GdprSection /> */}
                             </div>
                         </div>
                     </div>
                 </section>
             </main>
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

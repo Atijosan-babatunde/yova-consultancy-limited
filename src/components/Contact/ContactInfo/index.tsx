@@ -3,7 +3,7 @@ import { Phone, Mail } from "lucide-react"
 export function ContactInfo() {
   return (
     <div className="bg-white rounded-lg border border-slate-200 p-8">
-      <h2 className="text-2xl font-bold text-slate-900 mb-6">Reach Out Directly</h2>
+      <h2 className="text-2xl font-bold text-slate-900 mb-6">Reach out directly</h2>
 
       <div className="space-y-4">
         {/* Phone */}

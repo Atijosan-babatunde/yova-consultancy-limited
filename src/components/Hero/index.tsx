@@ -41,33 +41,37 @@ const HeroBanner = () => {
       {slides.map((slide, index) => (
         <div
           key={index}
-          className={`absolute top-0 left-0 w-full h-full bg-center bg-cover flex items-center justify-center transition-opacity duration-700 ease-in-out ${index === current ? "opacity-100 relative" : "opacity-0"
-            }`}
+          className={`absolute top-0 left-0 w-full h-full bg-center bg-cover flex items-center justify-center transition-opacity duration-700 ease-in-out ${
+            index === current ? "opacity-100 relative" : "opacity-0"
+          }`}
           style={{ backgroundImage: `url(${slide.image})` }}
         >
-          {/* Overlay */}
-          <div className="absolute inset-0 bg-[#000] opacity-60"></div>
+          {/* Overlay (allow clicks to pass through) */}
+          <div className="absolute inset-0 bg-black opacity-60 pointer-events-none"></div>
 
           {/* Content */}
           {index === current && (
             <div className="relative z-10 p-8 rounded-lg max-w-3xl text-center text-white">
-              <h1 className="text-5xl md:text-7xl font-extrabold mb-6">
+              <h1 className="text-4xl md:text-6xl font-extrabold mb-6">
                 {slide.title}
               </h1>
-              <p className="text-xl md:text-xl">{slide.subtitle}</p>
+              <p className="text-lg md:text-xl">{slide.subtitle}</p>
             </div>
           )}
         </div>
       ))}
+
+      {/* Navigation Buttons */}
       <button
-        className="absolute top-1/2 left-5 transform -translate-y-1/2 text-white  bg-opacity-30 hover:bg-opacity-60 rounded-full p-3 text-2xl select-none"
+        className="absolute top-1/2 left-5 transform -translate-y-1/2 text-white bg-black bg-opacity-40 hover:bg-opacity-70 rounded-full p-3 text-2xl z-20 active:scale-95 transition-all"
         onClick={prevSlide}
         aria-label="Previous Slide"
       >
         &#10094;
       </button>
+
       <button
-        className="absolute top-1/2 right-5 transform -translate-y-1/2 text-white bg-opacity-30 hover:bg-opacity-60 rounded-full p-3 text-2xl select-none"
+        className="absolute top-1/2 right-5 transform -translate-y-1/2 text-white bg-black bg-opacity-40 hover:bg-opacity-70 rounded-full p-3 text-2xl z-20 active:scale-95 transition-all"
         onClick={nextSlide}
         aria-label="Next Slide"
       >

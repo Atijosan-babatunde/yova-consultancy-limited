@@ -4,7 +4,7 @@ import { GuidingPrinciples } from '@/components/About/GuildingPrinciples'
 import { LeadershipSection } from '@/components/About/LeadershipSection'
 import { CertificationsSection } from '@/components/About/CertificationSection'
 import { CTASection } from '@/components/CtaSection'
-import { Footer } from '@/components/Footer'
+// import { Footer } from '@/components/Footer'
 
 export default function AboutPage() {
     return (
@@ -28,7 +28,7 @@ export default function AboutPage() {
                 <CertificationsSection />
             </main>
             <CTASection />
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

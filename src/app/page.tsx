@@ -2,7 +2,7 @@
 import AboutSection from "@/components/AboutSection";
 import CoreServices from "@/components/CoreServices";
 import { CTASection } from "@/components/CtaSection";
-import { Footer } from "@/components/Footer";
+// import { Footer } from "@/components/Footer";
 import HeroBanner from "@/components/Hero";
 // import { IndustriesSection } from "@/components/IndustriesSection";  
 import Navbar from "@/components/Navbar";
@@ -20,7 +20,7 @@ export default function Home() {
         {/* <IndustriesSection/> */}
         {/* <TestimonialsSection/> */}
         <CTASection/>
-        <Footer/>
+        {/* <Footer/> */}
       </main>
     </>
   )
