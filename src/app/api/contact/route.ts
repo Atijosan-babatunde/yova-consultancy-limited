@@ -1,5 +1,7 @@
 import { NextResponse } from "next/server";
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
+
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function POST(req: Request) {
   try {
@@ -9,38 +11,31 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
-
-    // Example: You could send this data to your email or database here
-    console.log("📩 New contact form submission:", {
-      fullName,
-      email,
-      subject,
-      message,
-    });
-
-    const transporter = nodemailer.createTransport({
-      service: "gmail", // or use custom SMTP
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-      },
-    });
-
-    await transporter.sendMail({
-      from: email,
-      to: process.env.RECEIVER_EMAIL, // your business inbox
-      subject: `New Contact Message from ${name}`,
-      text: message,
+    const { data, error } = await resend.emails.send({
+      from: 'Yova Properties <info@yovalimited.com>',
+      replyTo: email,
+      to: process.env.CONTACT_RECEIVER_EMAIL || '',
+      subject: subject || `New Contact Message from ${fullName}`,
       html: `
         <h3>New Contact Message</h3>
-        <p><b>Name:</b> ${name}</p>
+        <p><b>Name:</b> ${fullName}</p>
         <p><b>Email:</b> ${email}</p>
+        <p><b>Subject:</b> ${subject || 'No subject'}</p>
         <p><b>Message:</b></p>
         <p>${message}</p>
       `,
     });
 
-    return NextResponse.json({ success: true, message: "Form submitted successfully" });
+    if (error) {
+      console.error("Resend error:", error);
+      return NextResponse.json({ error: "Failed to send email" }, { status: 500 });
+    }
+
+    return NextResponse.json({ 
+      success: true, 
+      message: "Form submitted successfully",
+      id: data?.id 
+    });
   } catch (error) {
     console.error("Error in contact API:", error);
     return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });
