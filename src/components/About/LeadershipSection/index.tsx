@@ -17,13 +17,13 @@ const leaders = [
     image: "/images/about/analyst.jpg",
     linkedin: "https://www.linkedin.com/in/keji-s-a41b0132/", 
   },
-  // {
-  //   name: "Marcus Thorne",
-  //   position: "Chief Operations Officer",
-  //   description: "With extensive experience in change management and process optimization, Marcus leads our client delivery teams to achieve exceptional outcomes.",
-  //   image: "/images/about/selectiontwo.png",
-  //   linkedin: "https://www.linkedin.com/in/marcus-thorne", // example
-  // },
+  {
+    name: "Lara S.",
+    position: "Salesforce Business Analyst",
+    description: "With extensive experience in change management and process optimization, Marcus leads our client delivery teams to achieve exceptional outcomes.",
+    image: "/images/about/larapic.jpeg",
+    linkedin: "https://www.linkedin.com/in/laracena/",
+  },
 ]
 
 export function LeadershipSection() {
@@ -37,7 +37,7 @@ export function LeadershipSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-3 gap-6">
           {leaders.map((leader, index) => (
             <div
               key={index}
