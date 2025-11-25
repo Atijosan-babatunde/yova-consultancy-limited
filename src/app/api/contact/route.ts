@@ -12,8 +12,7 @@ export async function POST(req: Request) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: 'Yova Properties <info@yovalimited.com>',
-      replyTo: email,
+      from: process.env.CONTACT_SENDER_EMAIL || '',
       to: process.env.CONTACT_RECEIVER_EMAIL || '',
       subject: subject || `New Contact Message from ${fullName}`,
       html: `
